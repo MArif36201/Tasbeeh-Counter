@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasbeeh</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <style>
+        @font-face {
+            font-family: 'digital-clock-font';
+            src: url('fonts/calculator.ttf');
+        }
+    </style>
+
+
+
+    <script>
+        let user = {
+            step: 0,
+            step1: 0,
+            step2: 0
+
+        }
+
+
+        function incrementOrDecrement(type) {
+            if (type === 'inc') {
+
+
+                user.step++;
+                document.getElementById('num').innerHTML = user.step;
+
+            } else if (type === 'dec') {
+                user.step = 0
+                document.getElementById('num').innerHTML = user.step;
+
+            } else if (type === 'inc1') {
+
+
+
+
+                user.step1++;
+                document.getElementById('num2').innerHTML = user.step1;
+            } else if (type === 'dec1') {
+                user.step1 = 0
+                document.getElementById('num2').innerHTML = user.step1;
+            } else if (type === 'inc2') {
+
+
+                user.step2++;
+                document.getElementById('num3').innerHTML = user.step2;
+            } else if (type === 'dec2') {
+                user.step2 = 0
+                document.getElementById('num3').innerHTML = user.step2;
+            }
+        }
+    </script>
+
+
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+
+            </div>
+
+            <div class="col-md-4 center">
+                <div class="card bg-blue mt-5 p-3 ">
+                    <div class="card-body text-center text-white">
+
+                        <h1 id="num" style="font-family:'digital-clock-font'; font-size: 100px; color: blue;">0</h1>
+                        <img onclick="incrementOrDecrement('inc')" src="pic/download.jpg" alt=""
+                            style="height: 100px; width: 100px; border-radius: 10%;">
+                        <img onclick="incrementOrDecrement('dec')" src="pic/download.png" alt=""
+                            style="height: 40px; width: 40px; border-radius: 40%;">
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+
+            </div>
+
+            <div class="col-md-4 center">
+                <div class="card bg-blue mt-5 p-3 ">
+                    <div class="card-body text-center text-white">
+
+                        <h1 id="num2" style="font-family:'digital-clock-font'; font-size: 100px; color: blue;">0</h1>
+                        <img onclick="incrementOrDecrement('inc1')" src="pic/download (1).jpg" alt=""
+                            style="height: 100px; width: 100px; border-radius: 10%;">
+                        <img onclick="incrementOrDecrement('dec1')" src="pic/download.png" alt=""
+                            style="height: 40px; width: 40px; border-radius: 40%;">
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+
+            </div>
+
+            <div class="col-md-4 center">
+                <div class="card bg-blue mt-5 p-3 ">
+                    <div class="card-body text-center text-white">
+
+                        <h1 id="num3" style="font-family:'digital-clock-font'; font-size: 100px; color: blue;">0</h1>
+                        <img onclick="incrementOrDecrement('inc2')" src="pic/download (2).jpg" alt=""
+                            style="height: 100px; width: 100px; border-radius: 10%;">
+                        <img onclick="incrementOrDecrement('dec2')" src="pic/download.png" alt=""
+                            style="height: 40px; width: 40px; border-radius: 40%;">
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+    <input type="button" onclick="location.href='index.html'" value=" Home " />
+</body>
+
+</html>
